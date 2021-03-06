@@ -18,7 +18,7 @@ function NewMeetupForm(props) {
       description: descriptionInputRef.current.value,
     };
 
-    console.log(meetup);
+    props.onAddMeetup(meetup);
   }
 
   return (
